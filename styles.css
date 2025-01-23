@@ -6,10 +6,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins";
     background-color: #333;
     color: #ffffff;
     line-height: 1.6;
+    text-align: center; /* Tambahkan ini agar seluruh teks di body rata tengah */
 }
 
 .container {
@@ -17,11 +18,12 @@ body {
     margin: 0 auto;
 }
 
+/* Section Header */
 header {
-    background-color: #333; /* Warna latar belakang header yang lebih gelap */
+    background-color: #333; 
     padding: 50px 0;
     text-align: center;
-    color: rgb#333;
+    color: #ffffff; /* Perbaiki warna menjadi putih agar kontras */
 }
 
 .profile {
@@ -49,16 +51,11 @@ header {
     max-width: 600px;
 }
 
-Section */
+/* Section Experience */
 #experience {
-    background-color: #333; /* Light cyan background */
+    background-color: #ffffff; 
     padding: 60px 20px;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1000px;
+    text-align: center; /* Menambahkan text-align: center */
 }
 
 h2 {
@@ -70,13 +67,15 @@ h2 {
 p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #333;
+    color: #f333;
     margin-bottom: 30px;
 }
 
 .experience-list {
     list-style: none;
     padding-left: 0;
+    display: inline-block;
+    text-align: left;
 }
 
 .experience-list li {
@@ -84,22 +83,23 @@ p {
     border-radius: 10px;
     padding: 20px;
     margin: 10px 0;
-    box-shadow: 0 4px 6px rgba(#333);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .experience-list li strong {
     font-weight: bold;
-    color: #000000; /* Dark cyan for emphasis */
+    color: #000000; 
 }
 
+/* Section Hobbies */
 #hobbies {
-    background-color: hwb(#000000); /* Light yellow background */
+    background-color: #ffffff; 
     padding: 60px 20px;
 }
 
 .hobbies-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Mengatur konten agar berada di tengah */
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -108,7 +108,7 @@ p {
     background-color: #333;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(545454);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 250px;
     transition: transform 0.3s ease;
@@ -125,23 +125,20 @@ p {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     color: #000000;
     margin-bottom: 10px;
 }
 
-h3.animated-text, p.animated-text {
-    animation: fadeIn 2s ease-in-out;
-}
-
+/* Section Projects */
 #projects {
-    background-color: #333; /* Light blue background */
+    background-color: #ffffff; 
     padding: 60px 20px;
 }
 
 .projects-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Menjaga agar item-item berada di tengah */
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -178,15 +175,17 @@ p {
     color: #ffffff;
 }
 
+/* Section Testimonials */
 #testimonials {
     background-color: #ffffff;
     padding: 60px 0;
+    text-align: center; /* Menambahkan text-align: center */
 }
 
 .testimonial-card {
     background-color: #333;
-    box-shadow: 0 20px 60px rgb(255, 255, 255);
-    color: #000000;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
     padding: 30px;
     margin: 20px auto;
     width: 80%;
@@ -194,7 +193,7 @@ p {
     position: relative;
     text-align: center;
     max-width: 800px;
-    transform: translateY(-20px); /* Efek mengambang */
+    transform: translateY(-20px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -209,14 +208,15 @@ p {
 }
 
 .testimonial-card:hover {
-    transform: translateY(-35px); /* Efek bergerak ke atas saat hover */
+    transform: translateY(-35px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+/* Section Contact */
 .contact-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Menambahkan agar item kontak berada di tengah */
 }
 
 .contact-item {
@@ -251,6 +251,7 @@ p {
     font-size: 24px;
 }
 
+/* Footer */
 footer {
     background-color: #333;
     color: white;
