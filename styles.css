@@ -1,0 +1,283 @@
+/* Reset beberapa style dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333; /* Warna latar belakang header yang lebih gelap */
+    padding: 50px 0;
+    text-align: center;
+    color: rgb#333;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-info h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 600px;
+}
+
+Section */
+#experience {
+    background-color: #ffffff; /* Light cyan background */
+    padding: 60px 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #545454;
+    margin-bottom: 30px;
+}
+
+.experience-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-list li {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience-list li strong {
+    font-weight: bold;
+    color: #00796b; /* Dark cyan for emphasis */
+}
+
+#hobbies {
+    background-color: hwb(#000000); /* Light yellow background */
+    padding: 60px 20px;
+}
+
+.hobbies-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hobby-item {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(545454);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.hobby-item:hover {
+    transform: translateY(-10px);
+}
+
+.hobby-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+h3.animated-text, p.animated-text {
+    animation: fadeIn 2s ease-in-out;
+}
+
+#projects {
+    background-color: #ffffff; /* Light blue background */
+    padding: 60px 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-item {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+#testimonials {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.testimonial-card {
+    background-color: #333;
+    box-shadow: 0 20px 60px rgb(255, 255, 255);
+    color: #000000;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    transform: translateY(-20px); /* Efek mengambang */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.testimonial-card p:last-child {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-35px); /* Efek bergerak ke atas saat hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.contact-item a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.contact-item a:hover {
+    background-color: #444;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Animasi untuk Copyright */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.copyright {
+    animation: fadeIn 1.5s ease-in-out;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 1px;
+}
