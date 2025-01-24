@@ -3,147 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
+    <meta name="description" content="Website Pusat Pelatihan dan Pengembangan Pendidikan (P4) Jakarta Timur yang menyediakan informasi lengkap mengenai kegiatan, program pelatihan, dan pengembangan pendidikan.">
+    <meta name="keywords" content="P4, Jakarta Timur, pelatihan, pendidikan, program, FAQ, berita, kegiatan">
+    <meta name="author" content="Pusat Pelatihan dan Pengembangan Pendidikan P4">
+    <title>P4 Jakarta Timur</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Madimi+One&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
+    <!-- Navigation Bar -->
     <header>
-        <div class="container">
-            <div class="profile">
-                <img src="ini gua.jpg" alt="Foto Saya" class="profile-img">
-                <div class="profile-info">
-                    <h1>DIANDRA SETO SAPUTRA</h1>
-                    <p>Saya adalah seorang siswa SMK yang bersemangat untuk membuat aplikasi dan situs web yang inovatif dan responsif. Dengan latar belakang di desain dan pengembangan, saya selalu berusaha menciptakan pengalaman pengguna yang luar biasa.</p>
-                </div>
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="logo_p4.png" alt="" class="logo">
+                </a>
             </div>
-        </div>
+            <ul id="menu">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang-kami">Tentang Kami</a></li>
+                <li><a href="#program-pelatihan">Program Pelatihan</a></li>
+                <li><a href="#pengembangan-pendidikan">Pengembangan Pendidikan</a></li>
+                <li><a href="#berita-kegiatan">Berita & Kegiatan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><!-- Contoh Tombol CTA yang Diperbarui -->
+                    <a href="pendaftaran.html" class="cta-btn">Daftar Sekarang</a></li>
+            </ul>
+            <button class="mobile-menu" id="toggle-menu">&#9776;</button>
+        </nav>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <div class="konten">
-                <h2>ABOUT ME</h2>
+    <!-- Beranda Section -->
+<section id="beranda" class="section">
+    <img src="tugas akhir.jpg" alt="P4 Jakarta Timur" class="header-image">
+    <div class="overlay">
+        <h2>Selamat datang di Pusat Pelatihan dan Pengembangan Pendidikan P4 Jakarta Timur</h2>
+        <p>Visi: Meningkatkan kualitas pendidikan di Jakarta Timur melalui pelatihan dan pengembangan sumber daya manusia.</p>
+        <p>Misi: Menyediakan berbagai program pelatihan yang relevan untuk pengembangan kompetensi.</p>
+        
+        <!-- Visi, Misi, dan Tujuan -->
+        <div class="vision-mission-goals">
+            <div class="box">
+                <h3>Visi</h3>
+                <p>Meningkatkan kualitas pendidikan di Jakarta Timur melalui pelatihan dan pengembangan sumber daya manusia yang unggul dan berkompeten.</p>
             </div>
-            <p>Saya mengkhususkan diri dalam HTML, CSS, JavaScript, dan React. Saya suka menciptakan solusi kreatif dan efisien untuk masalah teknis yang ada.</p>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="animated-text">EXPERIENCE</h2>
-            <p class="animated-text">
-                Sebagai seorang siswa SMK, saya mulai mengembangkan minat di bidang teknologi sejak awal. Saya mempelajari berbagai aspek teknologi, dari pemrograman web, pengembangan aplikasi, hingga memahami perangkat keras dan jaringan.
-            </p>
-            <ul class="experience-list">
-                <li class="animated-text">
-                    <strong>Belajar HTML, CSS, dan JavaScript</strong>: Menguasai dasar-dasar pengembangan web sebagai langkah pertama untuk memahami cara kerja aplikasi web.
-                </li>
-                <li class="animated-text">
-                    <strong>Proyek E-Commerce</strong>: Membuat website e-commerce sederhana untuk memahami logika pemrograman dan desain antarmuka pengguna.
-                </li>
-                <li class="animated-text">
-                    <strong>Magang di Perusahaan Teknologi</strong>: Mendapatkan pengalaman praktis dalam mengembangkan aplikasi web dan mempelajari penggunaan teknologi terbaru.
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="hobbies" class="section">
-        <div class="container">
-            <h2 class="animated-text">HOBI</h2>
-            <p class="animated-text">Selain dunia teknologi, saya juga memiliki beberapa hobi yang saya nikmati, yaitu bermain game, berenang, dan pemrograman.</p>
-            <div class="hobbies-container">
-                <div class="hobby-item">
-                    <img src="game.jpg" alt="Game" class="hobby-logo">
-                    <h3 class="animated-text">Game</h3>
-                    <p class="animated-text">Bermain game membantu saya melepaskan stres dan juga memperbaiki keterampilan strategi serta pemecahan masalah.</p>
-                </div>
-                <div class="hobby-item">
-                    <img src="berenang.jpg" alt="Berenang" class="hobby-logo">
-                    <h3 class="animated-text">Berenang</h3>
-                    <p class="animated-text">Berenang adalah aktivitas fisik yang saya nikmati untuk menjaga kebugaran tubuh serta menenangkan pikiran.</p>
-                </div>
-                <div class="hobby-item">
-                    <img src="foto.jpg" alt="Pemrograman" class="hobby-logo">
-                    <h3 class="animated-text">fotograpy</h3>
-                    <p class="animated-text">Orang menyukai fotografi karena dapat mengabadikan momen, mengekspresikan kreativitas, dan melihat dunia dari perspektif baru.</p>
-                </div>
+            <div class="box">
+                <h3>Misi</h3>
+                <p>Menyediakan berbagai program pelatihan yang relevan untuk pengembangan kompetensi, serta mendukung peningkatan kinerja pendidik dan tenaga kependidikan.</p>
+            </div>
+            <div class="box">
+                <h3>Tujuan</h3>
+                <ul>
+                    <li>Memberikan pelatihan yang berkualitas sesuai dengan kebutuhan industri.</li>
+                    <li>Meningkatkan keterampilan dan kemampuan tenaga pendidik di Jakarta Timur.</li>
+                    <li>Menjadi pusat pengembangan kompetensi yang terdepan di Jakarta Timur.</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+    <!-- Tentang Kami Section -->
+<section id="tentang-kami" class="section">
+    <h3>Sejarah Pusat Pelatihan dan Pengembangan Pendidikan Jakarta Utara dan Kepulauan Seribu (P4JUKS)</h3>
+    <div class="about-content">
+        <img src="sejarah.jpg" alt="P4 Jakarta Timur" class="header-image">
+        <p>Pusat Pelatihan dan Pengembangan Pendidikan Jakarta Utara dan Kepulauan Seribu (P4JUKS) didirikan pada tahun 1973 dan diresmikan pada 22 Mei 1975. Awalnya bernama Pusat Latihan Pendidikan Teknik (PLPT), yang kemudian berganti nama beberapa kali, termasuk menjadi Pusat Pelatihan Pendidikan Kejuruan (Puslatdikjur) pada 2010 dan akhirnya pada 2022 menjadi P4JUKS. Saat ini, P4JUKS memiliki tugas penting dalam pembinaan kompetensi pendidik dan tenaga kependidikan di berbagai jenjang pendidikan dan kejuruan di wilayah Jakarta Utara dan Kepulauan Seribu.</p>
+    </div>
+</section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="animated-text">Proyek Saya</h2>
-            <p class="animated-text">Berikut adalah beberapa proyek yang telah saya buat selama bersekolah di SMK di bidang pengembangan web dan teknologi:</p>
-            <div class="projects-container">
-                <div class="project-item">
-                    <img src="ecommerce-project.jpg" alt="Proyek E-Commerce" class="project-image">
-                    <h3 class="animated-text">Website E-Commerce</h3>
-                    <p class="animated-text">
-                        Sebuah proyek e-commerce sederhana yang dibuat menggunakan HTML, CSS, dan JavaScript. Tujuan dari proyek ini adalah untuk memahami cara kerja halaman web yang berfungsi untuk jual beli produk secara online.
-                    </p>
-                </div>
-                <div class="project-item">
-                    <img src="portfolio-project.jpg" alt="Portfolio Website" class="project-image">
-                    <h3 class="animated-text">Website Portfolio</h3>
-                    <p class="animated-text">
-                        Sebuah website portfolio pribadi yang menampilkan keahlian saya dalam desain web dan pemrograman. Proyek ini dibuat untuk menunjukkan karya saya dalam pengembangan web.
-                    </p>
-                </div>
-                <div class="project-item">
-                    <img src="task-manager-project.jpg" alt="Task Manager" class="project-image">
-                    <h3 class="animated-text">Task Manager App</h3>
-                    <p class="animated-text">
-                        Aplikasi manajemen tugas berbasis web yang membantu pengguna untuk membuat dan mengatur tugas mereka sehari-hari. Dibangun menggunakan JavaScript dan localStorage untuk penyimpanan data.
-                    </p>
-                </div>
+    <!-- Program Pelatihan Section -->
+<section id="program-pelatihan" class="section">
+    <h2>Program Pelatihan</h2>
+    <h3>Daftar Program Pelatihan</h3>
+
+    <!-- Pencarian Program Pelatihan -->
+    <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Cari Program Pelatihan..." class="search-bar">
+
+    <!-- Tabel Daftar Program Pelatihan -->
+    <table id="programTable">
+        <thead>
+            <tr>
+                <th>Nama Program</th>
+                <th>Tanggal</th>
+                
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pelatihan Digital Marketing</td>
+                <td>15 Februari 2025</td>
+              
+                <td><a href="pendaftaran.html">Daftar</a></td>
+            </tr>
+            <tr>
+                <td>Pelatihan Pengembangan Kurikulum</td>
+                <td>20 Februari 2025</td>
+                
+                <td><a href="pendaftaran.html">Daftar</a></td>
+            </tr>
+            <tr>
+                <td>Pelatihan Manajemen Proyek</td>
+                <td>25 Februari 2025</td>
+                
+                <td><a href="pendaftaran.html">Daftar</a></td>
+            </tr>
+            <tr>
+                <td>Pelatihan Bahasa Inggris</td>
+                <td>1 Maret 2025</td>
+               
+                <td><a href="pendaftaran.html">Daftar</a></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Fitur Utama Pengembangan Pendidikan Section -->
+<section id="fitur-pengembangan" class="section">
+    <h2> Pengembangan Pendidikan</h2>
+    <div class="fitur-container">
+        <div class="fitur-item">
+            <h3>Pelatihan Kompetensi</h3>
+            <p>Program pelatihan yang dirancang untuk meningkatkan keterampilan praktis dan kompetensi profesional di berbagai bidang industri.</p>
+        </div>
+        <div class="fitur-item">
+            <h3>Peningkatan Kualitas Pengajaran</h3>
+            <p>Fokus pada peningkatan keterampilan dan metodologi pengajaran untuk mendukung para pendidik dalam memberikan pengalaman belajar yang lebih baik.</p>
+        </div>
+        <div class="fitur-item">
+            <h3>Inovasi Pembelajaran</h3>
+            <p>Menggunakan teknologi terbaru dan pendekatan inovatif untuk membuat proses belajar menjadi lebih efektif dan menarik.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Galeri Kegiatan Section (Masonry Grid) -->
+<section id="berita-kegiatan" class="section">
+    <h2>Berita dan Kegiatan</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="kegiatan.png" alt="Kegiatan 1">
+            <p>Desain Komunikasi Visual Angkatan I</p>
+        </div>
+        <div class="gallery-item">
+            <img src="kegiatan 2.jpeg" alt="Kegiatan 2">
+            <p>AKL Akuntansi Keuangan Lembaga</p>
+        </div>
+        <div class="gallery-item">
+            <img src="kegiatan 3.jpeg" alt="Kegiatan 3">
+            <p>Pusat Pelatihan dan Pengembangan Pendidikan Jakarta Utara dan Kepulauan Seribu</p>
+        </div>
+        <div class="gallery-item">
+            <img src="kegiatan 4.jpeg" alt="Kegiatan 4">
+            <p>Manajemen Perkantoran dan Layanan Bisnis Angkatan VII</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Kontak Section -->
+<section id="kontak" class="section">
+    <h2>Kontak Kami</h2>
+    
+    <!-- Form Kontak -->
+    <div class="contact-form-container">
+        <form action="submit_contact_form" method="POST" class="contact-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap Anda">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Masukkan email Anda">
+            
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" required placeholder="Tulis pesan Anda di sini"></textarea>
+            
+            <button type="submit" class="submit-btn">Kirim Pesan</button>
+        </form>
+    </div>
+
+    <!-- Informasi Kontak -->
+<section id="informasi-kontak" class="section">
+    <h2>Informasi Kontak</h2>
+    <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:info@p4jakartatimur.id">info@p4jakartatimur.id</a></p>
+        <p><i class="fas fa-phone-alt"></i> <strong>Telepon:</strong> <a href="tel:+6212345678">(021) 12345678</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Alamat:</strong> Jl Duren Sawit Baru No.5A, RT.9/RW.6, Pd. Bambu, Kec. Duren Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13430</p>
+    </div>
+</section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <h2>Pertanyaan yang Sering Diajukan (FAQ)</h2>
+        <div class="faq-item">
+            <button class="faq-question">Apa itu P4 Jakarta Timur?</button>
+            <div class="faq-answer">
+                <p>P4 Jakarta Timur adalah pusat pelatihan dan pengembangan pendidikan yang menyediakan berbagai program pelatihan dan kegiatan pendidikan untuk meningkatkan kualitas sumber daya manusia di Jakarta Timur.</p>
             </div>
         </div>
     </section>
 
-    <section id="testimonials">
-        <div class="container">
-            <h2>Testimoni</h2>
-            <div class="testimonial-card">
-                <p>"Nama saya adalah Yanto, dan saya sangat merekomendasikan Diandra sebagai seorang pengembang. Saya telah bekerja bersama mereka dalam beberapa proyek dan hasilnya selalu luar biasa!"</p>
-                <p>- Yanto</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Kontak Saya</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <a href="https://wa.me/6285695842553" target="_blank">
-                        <i class="fab fa-whatsapp"></i> +62 856-9584-2553
-                    </a>
-                </div>
-                <div class="contact-item">
-                    <a href="https://www.instagram.com/etoonolifee/" target="_blank">
-                        <i class="fab fa-instagram"></i> etoonolifee
-                    </a>
-                </div>
-                <div class="contact-item">
-                    <a href="mailto:andraseto43@gmail.com">
-                        <i class="far fa-envelope"></i> andraseto43@gmail.com
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer dengan Animasi Copyright -->
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p class="copyright">© 2025 Nama Saya. Semua hak cipta dilindungi.</p>
+        <div class="footer-content">
+            <p>&copy; 2025 P4 Jakarta Timur | All Rights Reserved</p>
+            <p>Contact: info@p4jakartatimur.id | Tel: (021) 12345678</p>
         </div>
     </footer>
 </body>
